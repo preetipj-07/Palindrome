@@ -1,15 +1,18 @@
-def is_palindrome_pointer(s):
-    s=str(s).lower()
-    left, right = 0, len(s) - 1
+def is_palindrome(s):
+    i, j = 0, len(s) - 1
 
-    while left < right:
-        if s[left] != s[right]:
+    while i < j:
+        if s[i] != s[j]:
             return False
-        left += 1
-        right -= 1
+        i += 1
+        j -= 1
+
     return True
-s="madam"
-if is_palindrome_pointer(user_input):
-    print(f'"{user_input}" is a palindrome.')
+
+
+s = "madam"
+
+if is_palindrome(s):
+    print("Yes, it is a palindrome")
 else:
-    print(f'"{user_input}" is not a palindrome.')
+    print("No, it is not a palindrome")
