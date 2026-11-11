@@ -8,7 +8,7 @@ def is_palindrome_pointer(s):
         left += 1
         right -= 1
     return True
-user_input = input("Enter a string to check if it's a palindrome: ")    
+s="madam"
 if is_palindrome_pointer(user_input):
     print(f'"{user_input}" is a palindrome.')
 else:
